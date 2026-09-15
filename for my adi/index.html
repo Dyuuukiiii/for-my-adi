@@ -3,9 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>for my adi</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Caveat:wght@600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<title>for my adi ♡ — a little universe i made for you</title>
 <style>
   :root{
     --bg-lavender:#efe8fd;
@@ -321,7 +319,7 @@
   .envelope-svg .seal, .envelope-svg .seal-heart{
     transition: opacity 0.3s ease;
   }
-  .envelope:hover .envelope-svg{ transform: translateY(-3px); }
+  .envelope:hover .envelope-svg{ transform:none; }
   .envelope-svg{ transition: transform 0.25s ease; }
 
   .envelope-wrap.opened .envelope-svg .flap-front{
@@ -484,9 +482,1062 @@
   }
 
   .hidden{ display:none !important; }
+
+  /* ---------- dedicated music page ---------- */
+  .music-page{
+    background:
+      radial-gradient(circle at 20% 15%, rgba(201,174,251,.72), transparent 38%),
+      radial-gradient(circle at 82% 20%, rgba(170,180,251,.58), transparent 36%),
+      radial-gradient(circle at 50% 90%, rgba(124,58,237,.30), transparent 48%),
+      linear-gradient(155deg, #efe8fd 0%, #e3d9fb 48%, #d9defb 100%);
+  }
+  .music-page .music-shell{
+    width:min(100%, 760px);
+    text-align:center;
+  }
+  .music-page .music-intro{
+    margin-bottom:18px;
+  }
+  .music-page .music-intro .sub{
+    margin-bottom:16px;
+  }
+  .music-page .music-player{
+    margin-top:18px;
+  }
+  .music-page .music-backdrop{
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+    overflow:hidden;
+  }
+  .music-page .music-backdrop::before,
+  .music-page .music-backdrop::after{
+    content:"";
+    position:absolute;
+    border-radius:50%;
+    filter:blur(55px);
+    opacity:.28;
+  }
+  .music-page .music-backdrop::before{
+    width:280px;height:280px;
+    left:-80px;bottom:8%;
+    background:#9b5cff;
+  }
+  .music-page .music-backdrop::after{
+    width:320px;height:320px;
+    right:-100px;top:10%;
+    background:#5b6ef5;
+  }
+
+  /* ================= ULTRA ROMANCE ENHANCEMENTS ================= */
+  body::before{
+    content:"";
+    position:fixed; inset:0; pointer-events:none; z-index:1;
+    background:
+      radial-gradient(circle at 50% 0%, rgba(255,255,255,.45), transparent 35%),
+      linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+    background-size:auto, 32px 32px, 32px 32px;
+    mask-image:linear-gradient(to bottom, black, transparent 90%);
+  }
+  #starfield{
+    position:fixed; inset:0; width:100%; height:100%;
+    pointer-events:none; z-index:1; opacity:.9;
+  }
+  .ambient-glow{
+    position:fixed; width:420px; height:420px; border-radius:50%;
+    pointer-events:none; z-index:0; filter:blur(80px); opacity:.22;
+    background:#9b5cff; animation:driftGlow 14s ease-in-out infinite alternate;
+  }
+  .ambient-glow.g1{top:-180px;left:-100px}
+  .ambient-glow.g2{right:-160px;bottom:-160px;background:#5b6ef5;animation-delay:-5s}
+  @keyframes driftGlow{to{transform:translate(80px,50px) scale(1.15)}}
+
+  .page{ z-index:3; }
+  .card-shell{ perspective:1200px; }
+  .soft-card, .choice-card{
+    backdrop-filter:blur(14px);
+    -webkit-backdrop-filter:blur(14px);
+    border:1px solid rgba(255,255,255,.65);
+  }
+  .soft-card{
+    background:linear-gradient(145deg,rgba(255,255,255,.88),rgba(248,244,255,.72));
+    box-shadow:0 30px 80px rgba(56,22,115,.22), inset 0 1px rgba(255,255,255,.9);
+    animation:cardFloat 6s ease-in-out infinite;
+  }
+  @keyframes cardFloat{50%{transform:translateY(-5px)}}
+  .choice-card{
+    overflow:hidden;
+    background:linear-gradient(145deg,rgba(255,255,255,.94),rgba(243,235,255,.76));
+  }
+  .choice-card::after{
+    content:""; position:absolute; inset:-80px;
+    background:linear-gradient(110deg,transparent 35%,rgba(255,255,255,.6) 50%,transparent 65%);
+    transform:translateX(-100%) rotate(8deg); transition:transform .7s ease;
+  }
+  .choice-card:hover::after{transform:translateX(100%) rotate(8deg)}
+  .eyebrow{position:relative;z-index:2}
+  .script{text-shadow:0 4px 22px rgba(124,58,237,.16)}
+  .btn-primary{
+    position:relative; overflow:hidden;
+    box-shadow:0 12px 30px rgba(124,58,237,.3), inset 0 1px rgba(255,255,255,.45);
+  }
+  .btn-primary::before{
+    content:""; position:absolute; inset:0;
+    background:linear-gradient(110deg,transparent 25%,rgba(255,255,255,.42) 50%,transparent 75%);
+    transform:translateX(-120%); transition:transform .55s ease;
+  }
+  .btn-primary:hover::before{transform:translateX(120%)}
+  .btn-primary > *,.btn-primary{isolation:isolate}
+
+  .progress-orb{
+    position:fixed; top:20px; right:22px; z-index:20;
+    width:52px;height:52px;border-radius:50%;
+    background:rgba(255,255,255,.58); backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,.8);
+    box-shadow:0 10px 30px rgba(76,29,149,.18);
+    display:flex;align-items:center;justify-content:center;
+    font-family:'Baloo 2';font-weight:800;color:var(--purple-deep);
+  }
+  .progress-orb span{font-size:.72rem}
+  .spark{
+    position:fixed; width:7px;height:7px;border-radius:50%;
+    background:#fff; box-shadow:0 0 12px #fff,0 0 22px #c9aefb;
+    pointer-events:none;z-index:2; animation:sparkle 1.8s ease-out forwards;
+  }
+  @keyframes sparkle{0%{opacity:0;transform:scale(.2)}25%{opacity:1}100%{opacity:0;transform:translateY(-40px) scale(1.8)}}
+
+  .letter-page{
+    padding:26px 24px;
+    border-radius:20px;
+    background:
+      linear-gradient(rgba(124,58,237,.035) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(124,58,237,.025) 1px,transparent 1px),
+      #fffdfd;
+    background-size:24px 24px;
+    border:1px solid #eadfff;
+    box-shadow:inset 0 0 35px rgba(124,58,237,.045);
+  }
+  .letter-page::before{
+    content:"✦  handwritten with love  ✦";
+    display:block; margin-bottom:14px;
+    font:700 .72rem 'Baloo 2'; letter-spacing:.12em;
+    text-transform:uppercase;color:#a08acb;
+  }
+  .letter-page p:first-of-type{margin-top:0}
+  .letter-page-nav{position:relative;z-index:4}
+  .page-dots .dot{box-shadow:0 0 0 3px rgba(124,58,237,.05)}
+  .page-dots .dot.active{box-shadow:0 0 12px rgba(124,58,237,.55)}
+
+
+  /* ---------- cinematic custom music player ---------- */
+  .music-player{
+    width:min(100%, 560px);
+    margin:22px auto 0;
+    padding:24px;
+    border-radius:28px;
+    position:relative;
+    overflow:hidden;
+    background:
+      radial-gradient(circle at 50% 0%, rgba(196,150,255,.28), transparent 42%),
+      linear-gradient(145deg, rgba(54,20,103,.98), rgba(28,12,62,.98));
+    border:1px solid rgba(255,255,255,.16);
+    box-shadow:
+      0 28px 70px rgba(45,16,101,.35),
+      inset 0 1px rgba(255,255,255,.16);
+    color:#fff;
+  }
+  .music-player::before{
+    content:"";
+    position:absolute; inset:-50%;
+    background:conic-gradient(from 90deg, transparent, rgba(180,130,255,.18), transparent 35%);
+    animation:musicAura 8s linear infinite;
+    pointer-events:none;
+  }
+  @keyframes musicAura{to{transform:rotate(360deg)}}
+  .music-top{
+    position:relative; z-index:2;
+    display:flex; align-items:center; justify-content:space-between;
+    gap:12px; margin-bottom:20px;
+  }
+  .music-label{
+    display:flex; align-items:center; gap:9px;
+    font-size:.72rem; font-weight:800; letter-spacing:.14em;
+    text-transform:uppercase; color:#d9c5ff;
+  }
+  .music-dot{
+    width:8px;height:8px;border-radius:50%;
+    background:#cda8ff; box-shadow:0 0 14px #cda8ff;
+    animation:musicDot 1.5s ease-in-out infinite;
+  }
+  @keyframes musicDot{50%{transform:scale(1.45);opacity:.55}}
+  .music-time-label{font-size:.72rem;color:#a99bc4}
+  .record-stage{
+    position:relative; z-index:2;
+    width:190px;height:190px;margin:4px auto 20px;
+    display:grid;place-items:center;
+  }
+  .record-aura{
+    position:absolute; inset:8px; border-radius:50%;
+    background:radial-gradient(circle, rgba(174,125,255,.35), transparent 68%);
+    filter:blur(16px); opacity:.5;
+    transition:opacity .35s, transform .35s;
+  }
+  .music-player.playing .record-aura{opacity:1;transform:scale(1.12)}
+  .record{
+    width:156px;height:156px;border-radius:50%;
+    position:relative;
+    background:
+      repeating-radial-gradient(circle at center, #16101f 0 2px, #24153d 2px 4px),
+      #160d28;
+    box-shadow:0 18px 35px rgba(0,0,0,.45), inset 0 0 0 1px rgba(255,255,255,.08);
+    transform:rotate(0deg);
+  }
+  .record.playing{animation:spin 5s linear infinite}
+  .record::before{
+    content:"";position:absolute;inset:38px;border-radius:50%;
+    background:radial-gradient(circle,#e9d8ff 0 4px,#7c3aed 5px 12px,#2e1065 13px 100%);
+    box-shadow:0 0 18px rgba(186,139,255,.5);
+  }
+  .record::after{
+    content:"";position:absolute;inset:13px;border-radius:50%;
+    border:1px solid rgba(255,255,255,.1);
+  }
+  .needle{
+    position:absolute;z-index:5;right:9px;top:0;
+    width:74px;height:8px;border-radius:8px;
+    background:linear-gradient(90deg,#e8d9ff,#9d78d8);
+    transform-origin:8px 4px;transform:rotate(20deg);
+    transition:transform .5s cubic-bezier(.2,.8,.2,1);
+    box-shadow:0 3px 10px rgba(0,0,0,.3);
+  }
+  .needle::after{
+    content:"";position:absolute;right:-2px;top:4px;
+    width:7px;height:14px;border-radius:3px;
+    background:#fff;transform:rotate(-18deg);
+  }
+  .music-player.playing .needle{transform:rotate(8deg)}
+  .track-meta{position:relative;z-index:2;text-align:center;margin-bottom:18px}
+  .track-title{font-family:'Baloo 2';font-weight:800;font-size:1.3rem;margin:0;color:#fff}
+  .track-artist{font-size:.78rem;color:#bcaed3;margin-top:2px}
+  .visualizer{
+    position:relative;z-index:2;height:30px;
+    display:flex;align-items:flex-end;justify-content:center;gap:4px;margin:0 auto 18px;
+  }
+  .visualizer i{
+    width:4px;height:8px;border-radius:99px;
+    background:linear-gradient(#e7d7ff,#8e63d7);
+    animation:bars .9s ease-in-out infinite;
+    animation-play-state:paused;
+  }
+  .music-player.playing .visualizer i{animation-play-state:running}
+  .visualizer i:nth-child(2){height:18px;animation-delay:.1s}
+  .visualizer i:nth-child(3){height:11px;animation-delay:.2s}
+  .visualizer i:nth-child(4){height:25px;animation-delay:.3s}
+  .visualizer i:nth-child(5){height:15px;animation-delay:.4s}
+  .visualizer i:nth-child(6){height:22px;animation-delay:.5s}
+  .visualizer i:nth-child(7){height:10px;animation-delay:.6s}
+  @keyframes bars{50%{transform:scaleY(.35)}}
+  .music-progress{
+    position:relative;z-index:2;
+    width:100%;appearance:none;height:5px;border-radius:99px;
+    background:rgba(255,255,255,.16);outline:none;cursor:pointer;
+  }
+  .music-progress::-webkit-slider-thumb{
+    appearance:none;width:13px;height:13px;border-radius:50%;
+    background:#fff;box-shadow:0 0 12px #cda8ff;cursor:pointer;
+  }
+  .music-progress::-moz-range-thumb{
+    width:13px;height:13px;border:0;border-radius:50%;
+    background:#fff;box-shadow:0 0 12px #cda8ff;cursor:pointer;
+  }
+  .time-row{
+    position:relative;z-index:2;display:flex;justify-content:space-between;
+    color:#a99bc4;font-size:.7rem;margin-top:7px;
+  }
+  .music-controls{
+    position:relative;z-index:2;
+    display:flex;align-items:center;justify-content:center;gap:12px;margin-top:17px;
+  }
+  .music-btn{
+    width:42px;height:42px;border-radius:50%;border:1px solid rgba(255,255,255,.12);
+    background:rgba(255,255,255,.08);color:#eee;
+    cursor:pointer;display:grid;place-items:center;font-weight:800;
+    transition:transform .2s,background .2s;
+  }
+  .music-btn:hover{transform:translateY(-3px);background:rgba(255,255,255,.16)}
+  .music-btn.main{
+    width:58px;height:58px;font-size:1.05rem;
+    background:linear-gradient(135deg,#a86dff,#6b46c1);
+    box-shadow:0 10px 28px rgba(124,58,237,.4);
+  }
+  .volume-row{
+    position:relative;z-index:2;
+    display:flex;align-items:center;gap:9px;margin-top:17px;color:#a99bc4;
+  }
+  .volume-row span{font-size:.8rem}
+  .volume{
+    flex:1;appearance:none;height:4px;border-radius:99px;
+    background:rgba(255,255,255,.14);outline:none;
+  }
+  .volume::-webkit-slider-thumb{appearance:none;width:11px;height:11px;border-radius:50%;background:#d9c5ff}
+  .volume::-moz-range-thumb{width:11px;height:11px;border:0;border-radius:50%;background:#d9c5ff}
+  .music-note{
+    position:relative;z-index:2;
+    text-align:center;margin:16px 0 0;font-size:.73rem;color:#a99bc4;
+  }
+  .music-error{
+    position:relative;z-index:2;min-height:16px;
+    margin-top:8px;text-align:center;font-size:.72rem;color:#ffb3d0;
+  }
+  .music-player .hidden-audio{
+    position:absolute;width:1px;height:1px;opacity:0;pointer-events:none;
+  }
+  .final-glow{
+    position:absolute; inset:15%; border-radius:50%;
+    background:radial-gradient(circle,rgba(124,58,237,.13),transparent 65%);
+    filter:blur(25px);pointer-events:none;
+  }
+  .heart-burst{position:fixed;pointer-events:none;z-index:30;font-size:20px;animation:heartBurst 1.4s ease-out forwards}
+  @keyframes heartBurst{
+    to{transform:translate(var(--x),var(--y)) rotate(var(--r));opacity:0}
+  }
+  @media(max-width:640px){
+    .progress-orb{top:10px;right:10px;width:42px;height:42px}
+    .soft-card{padding:30px 18px}
+    .letter-page{padding:22px 16px}
+    .spotify-wrap iframe{height:352px}
+  }
+
+
+
+  /* Softer music page — envelope styles are untouched */
+  .music-page{
+    background:
+      radial-gradient(circle at 18% 18%, rgba(201,174,251,.28), transparent 38%),
+      radial-gradient(circle at 84% 22%, rgba(170,180,251,.22), transparent 36%),
+      linear-gradient(155deg, #f5f0fb 0%, #eee8f7 52%, #e9ebf7 100%);
+  }
+
+  .music-page .music-backdrop::before{
+    width:240px;height:240px;
+    left:-70px;bottom:8%;
+    background:#c9aefb;
+    opacity:.12;
+    filter:blur(70px);
+  }
+
+  .music-page .music-backdrop::after{
+    width:260px;height:260px;
+    right:-80px;top:10%;
+    background:#aab4fb;
+    opacity:.10;
+    filter:blur(75px);
+  }
+
+  .music-page .music-player{
+    background:rgba(255,255,255,.46) !important;
+    border:1px solid rgba(124,58,237,.12) !important;
+    box-shadow:0 18px 50px rgba(91,72,130,.10) !important;
+    backdrop-filter:blur(14px);
+  }
+
+  .music-page .music-player .music-top,
+  .music-page .music-player .track-artist,
+  .music-page .music-player .music-note,
+  .music-page .music-player .time-row{
+    color:rgba(74,61,92,.70);
+  }
+
+  .music-page .music-player .track-title{ color:#554466; }
+  .music-page .music-player .music-label{ color:#755d8e; }
+
+  .music-page .music-player .music-dot{
+    background:#a78ac5;
+    box-shadow:0 0 0 4px rgba(167,138,197,.12);
+  }
+
+  .music-page .music-player .music-btn{
+    background:rgba(255,255,255,.62);
+    color:#6c587c;
+    border:1px solid rgba(108,88,124,.13);
+    box-shadow:0 6px 18px rgba(91,72,130,.08);
+  }
+
+  .music-page .music-player .music-btn.main{
+    background:rgba(124,58,237,.72);
+    color:white;
+    border-color:rgba(124,58,237,.16);
+    box-shadow:0 8px 22px rgba(124,58,237,.13);
+  }
+
+  .music-page .music-player .record-aura{ opacity:.12; }
+
+  .music-page .music-player .music-progress,
+  .music-page .music-player .volume{
+    accent-color:#8d76a8;
+  }
+
+  .music-page .music-player .visualizer i{
+    background:rgba(124,58,237,.40);
+  }
+
+  .music-page .music-error{ color:#8a6d9e; }
+
+
+/* ================= MUSIC PAGE — SOFT ENVELOPE MATCH ================= */
+.music-page{
+  background:linear-gradient(to bottom,#f1eafd,#ffffff) !important;
+}
+
+.music-page .music-backdrop{
+  opacity:.35 !important;
+}
+
+.music-page .music-backdrop::before{
+  width:220px !important;
+  height:220px !important;
+  left:-80px !important;
+  bottom:5% !important;
+  background:#d9c9f2 !important;
+  opacity:.10 !important;
+  filter:blur(85px) !important;
+}
+
+.music-page .music-backdrop::after{
+  width:240px !important;
+  height:240px !important;
+  right:-90px !important;
+  top:5% !important;
+  background:#d5dcf7 !important;
+  opacity:.08 !important;
+  filter:blur(90px) !important;
+}
+
+/* Quiet glass card — intentionally NOT saturated */
+.music-page .music-player{
+  background:rgba(255,255,255,.72) !important;
+  border:1px solid rgba(201,174,251,.30) !important;
+  box-shadow:0 12px 35px rgba(105,88,130,.09) !important;
+  backdrop-filter:blur(8px) !important;
+}
+
+/* Keep the controls soft and close to the envelope palette */
+.music-page .music-player .music-btn{
+  background:rgba(255,255,255,.82) !important;
+  color:#79658b !important;
+  border:1px solid rgba(201,174,251,.25) !important;
+  box-shadow:0 4px 12px rgba(105,88,130,.07) !important;
+}
+
+.music-page .music-player .music-btn.main{
+  background:#c9aefb !important;
+  color:#fff !important;
+  border-color:#c9aefb !important;
+  box-shadow:0 5px 14px rgba(124,58,237,.12) !important;
+}
+
+.music-page .music-player .track-title{
+  color:#665471 !important;
+}
+
+.music-page .music-player .track-artist,
+.music-page .music-player .music-note,
+.music-page .music-player .time-row{
+  color:#8b7b95 !important;
+}
+
+.music-page .music-player .music-label{
+  color:#89729d !important;
+}
+
+.music-page .music-player .music-dot{
+  background:#c9aefb !important;
+  box-shadow:none !important;
+}
+
+.music-page .music-player .visualizer i{
+  background:#c9aefb !important;
+}
+
+.music-page .music-player .music-progress,
+.music-page .music-player .volume{
+  accent-color:#b69bd9 !important;
+}
+
+.music-page .music-player .record-aura{
+  opacity:.06 !important;
+}
+
+.music-page .music-error{
+  color:#9a849f !important;
+}
+
+
+/* ================= FINAL FIXES ================= */
+
+/* Envelope: always stays the same size, even when letter text is short */
+#content-letter .envelope-wrap{
+  min-height:172px !important;
+  height:172px !important;
+  flex:0 0 172px !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+}
+
+#content-letter .envelope{
+  width:220px !important;
+  height:154px !important;
+  min-width:220px !important;
+  min-height:154px !important;
+  flex:0 0 220px !important;
+}
+
+#content-letter .envelope-svg{
+  width:220px !important;
+  height:154px !important;
+  min-width:220px !important;
+  min-height:154px !important;
+}
+
+/* Music: very quiet, paper-like card — no saturated purple */
+.music-page .music-player{
+  background:#fbf9fd !important;
+  background-image:none !important;
+  border:1px solid #e7def0 !important;
+  box-shadow:0 10px 28px rgba(80,65,95,.08) !important;
+  color:#75687d !important;
+}
+
+.music-page .music-player::before{
+  display:none !important;
+}
+
+.music-page .music-player::after{
+  display:none !important;
+}
+
+.music-page .music-btn{
+  background:#f7f3fa !important;
+  color:#806f89 !important;
+  border:1px solid #e7def0 !important;
+  box-shadow:none !important;
+}
+
+.music-page .music-btn.main{
+  background:#cdb9df !important;
+  color:#fff !important;
+  border-color:#cdb9df !important;
+  box-shadow:none !important;
+}
+
+.music-page .music-dot{
+  background:#cdb9df !important;
+  box-shadow:none !important;
+}
+
+.music-page .visualizer i{
+  background:#cdb9df !important;
+}
+
+.music-page .music-progress,
+.music-page .volume{
+  accent-color:#bca6cc !important;
+}
+
+.music-page .track-title{
+  color:#695b70 !important;
+}
+
+.music-page .track-artist,
+.music-page .music-note,
+.music-page .time-row{
+  color:#95899a !important;
+}
+
+.music-page .music-label{
+  color:#88758f !important;
+}
+
+.music-page .record-aura{
+  display:none !important;
+}
+
+.music-page .music-top{
+  color:#88758f !important;
+}
+
+
+/* ============================================================
+   ABSOLUTE FINAL OVERRIDE
+   ENVELOPE SIZE + VERY SOFT MUSIC CARD
+   ============================================================ */
+
+/* ---- ENVELOPE: fixed physical footprint ---- */
+section#page2 #content-letter .envelope-wrap,
+section#page2 #content-letter .envelope-wrap.opened{
+  width:220px !important;
+  height:172px !important;
+  min-width:220px !important;
+  min-height:172px !important;
+  max-width:220px !important;
+  max-height:172px !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+  padding:0 !important;
+  flex:none !important;
+  box-sizing:border-box !important;
+}
+
+section#page2 #content-letter .envelope,
+section#page2 #content-letter .envelope.opened{
+  width:220px !important;
+  height:154px !important;
+  min-width:220px !important;
+  min-height:154px !important;
+  max-width:220px !important;
+  max-height:154px !important;
+  flex:none !important;
+  box-sizing:border-box !important;
+}
+
+section#page2 #content-letter .envelope-svg{
+  display:block !important;
+  width:220px !important;
+  height:154px !important;
+  min-width:220px !important;
+  min-height:154px !important;
+  max-width:220px !important;
+  max-height:154px !important;
+  transform-origin:center center !important;
+}
+
+/* Never let letter content change the envelope's dimensions */
+section#page2 #content-letter .letter-text{
+  width:100% !important;
+  box-sizing:border-box !important;
+}
+
+/* ---- MUSIC: flat, subdued paper card ---- */
+section#page5 .music-player,
+section#page4 .music-player{
+  background:#f4f1f5 !important;
+  background-image:none !important;
+  border:1px solid #ddd7df !important;
+  box-shadow:0 8px 22px rgba(70,60,75,.06) !important;
+  color:#716873 !important;
+}
+
+section#page5 .music-player::before,
+section#page5 .music-player::after,
+section#page4 .music-player::before,
+section#page4 .music-player::after{
+  display:none !important;
+  opacity:0 !important;
+  animation:none !important;
+}
+
+section#page5 .music-player .music-btn,
+section#page4 .music-player .music-btn{
+  background:#ebe7ec !important;
+  border:1px solid #d9d2dc !important;
+  color:#766d79 !important;
+  box-shadow:none !important;
+}
+
+section#page5 .music-player .music-btn.main,
+section#page4 .music-player .music-btn.main{
+  background:#b9a9bd !important;
+  border-color:#b9a9bd !important;
+  color:#ffffff !important;
+  box-shadow:none !important;
+}
+
+section#page5 .music-player .music-dot,
+section#page4 .music-player .music-dot{
+  background:#b9a9bd !important;
+  box-shadow:none !important;
+}
+
+section#page5 .music-player .visualizer i,
+section#page4 .music-player .visualizer i{
+  background:#b9a9bd !important;
+}
+
+section#page5 .music-player .music-progress,
+section#page5 .music-player .volume,
+section#page4 .music-player .music-progress,
+section#page4 .music-player .volume{
+  accent-color:#aa9aac !important;
+}
+
+section#page5 .music-player .track-title,
+section#page4 .music-player .track-title{
+  color:#625a64 !important;
+}
+
+section#page5 .music-player .track-artist,
+section#page5 .music-player .music-note,
+section#page5 .music-player .time-row,
+section#page4 .music-player .track-artist,
+section#page4 .music-player .music-note,
+section#page4 .music-player .time-row{
+  color:#8c838e !important;
+}
+
+section#page5 .music-player .music-label,
+section#page4 .music-player .music-label{
+  color:#817681 !important;
+}
+
+section#page5 .music-player .record-aura,
+section#page4 .music-player .record-aura{
+  display:none !important;
+  opacity:0 !important;
+}
+
+/* Make the MUSIC PAGE background itself quiet too */
+section#page5.music-page{
+  background:#eeeaf0 !important;
+  background-image:none !important;
+}
+
+
+/* ============================================================
+   FIX 2 — ENVELOPE INNER LETTER + MUSIC PLAY BUTTON
+   ============================================================ */
+
+/* The white/purple letter sheet INSIDE the envelope stays fixed.
+   This targets the SVG path itself, not the surrounding text. */
+section#page2 #content-letter .envelope-svg .letter-peek{
+  transform-box:fill-box !important;
+  transform-origin:50% 100% !important;
+  width:auto !important;
+  height:auto !important;
+}
+
+/* Keep the envelope SVG viewport from being affected by any
+   content outside the SVG. */
+section#page2 #content-letter .envelope-svg{
+  overflow:visible !important;
+  flex-shrink:0 !important;
+}
+
+/* The envelope wrapper remains a fixed visual area. */
+section#page2 #content-letter .envelope-wrap{
+  flex-shrink:0 !important;
+}
+
+/* Darker PLAY button — only the play button gets darker. */
+section#page5 .music-player .music-btn.main,
+section#page4 .music-player .music-btn.main{
+  background:#6f5a78 !important;
+  border-color:#6f5a78 !important;
+  color:#ffffff !important;
+  box-shadow:0 4px 12px rgba(55,45,60,.18) !important;
+}
+
+/* Keep music fully normal — do NOT mute/disable audio. */
+section#page5 .music-player audio,
+section#page4 .music-player audio{
+  display:block !important;
+}
+
+section#page5 .music-player .hidden-audio,
+section#page4 .music-player .hidden-audio{
+  position:absolute !important;
+  width:1px !important;
+  height:1px !important;
+  opacity:0 !important;
+  pointer-events:none !important;
+}
+
+/* Preserve the soft box without making the actual music quieter. */
+section#page5 .music-player,
+section#page4 .music-player{
+  background:#f4f1f5 !important;
+}
+
+
+/* ============================================================
+   ENVELOPE INNER PAPER — DO NOT SHRINK
+   ============================================================ */
+
+/* Keep the paper INSIDE the envelope at its original dimensions.
+   Only its opacity changes when the envelope opens; it never scales. */
+section#page2 #content-letter .envelope-svg .letter-peek{
+  transform:none !important;
+  transform-box:fill-box !important;
+  transform-origin:50% 100% !important;
+  opacity:1 !important;
+}
+
+/* If the envelope is opened, hide the paper rather than shrinking it. */
+section#page2 #content-letter .envelope-wrap.opened .envelope-svg .letter-peek{
+  transform:none !important;
+  opacity:0 !important;
+}
+
+/* Keep the SVG itself at the exact original size. */
+section#page2 #content-letter .envelope-svg,
+section#page2 #content-letter .envelope{
+  width:220px !important;
+  height:154px !important;
+  min-width:220px !important;
+  min-height:154px !important;
+  max-width:220px !important;
+  max-height:154px !important;
+  transform:none !important;
+}
+
+/* Do not allow the envelope container to resize around short text. */
+section#page2 #content-letter .envelope-wrap{
+  width:220px !important;
+  height:172px !important;
+  min-width:220px !important;
+  min-height:172px !important;
+  max-width:220px !important;
+  max-height:172px !important;
+}
+
+/* Dark play button, audio remains untouched. */
+section#page5 .music-player .music-btn.main,
+section#page4 .music-player .music-btn.main{
+  background:#66536f !important;
+  border-color:#66536f !important;
+  color:#fff !important;
+  box-shadow:0 4px 12px rgba(45,35,50,.18) !important;
+}
+
+
+/* ============================================================
+   REAL FIX — LETTER BOX NEVER SHRINKS
+   ============================================================ */
+
+/*
+  The thing that was actually shrinking was .letter-page.
+  The envelope SVG was not the cause: short pages (especially
+  page 4) were allowed to collapse to their content height.
+*/
+section#page2 #content-letter .letter-page{
+  min-height:520px !important;
+  box-sizing:border-box !important;
+}
+
+/* Keep the letter pages visually identical in height while
+   still allowing a genuinely long page to grow naturally. */
+section#page2 #content-letter .letter-page.hidden{
+  display:none !important;
+}
+
+/* Darker play button, without changing audio volume. */
+section#page5 .music-player .music-btn.main,
+section#page4 .music-player .music-btn.main{
+  background:#5b465f !important;
+  border-color:#5b465f !important;
+  color:#fff !important;
+  box-shadow:0 5px 14px rgba(45,35,50,.20) !important;
+}
+
+
+/* ============================================================
+   FINAL — THE LETTER BOX IS PHYSICALLY FIXED
+   ============================================================ */
+
+/* THIS is the visible paper/card containing the letter.
+   Give it a real fixed height, not just min-height, so a short
+   letter can NEVER make the box collapse. */
+#content-letter .letter-text{
+  width:100% !important;
+  min-height:0 !important;
+}
+
+#content-letter .letter-page{
+  width:100% !important;
+  height:520px !important;
+  min-height:520px !important;
+  max-height:520px !important;
+  box-sizing:border-box !important;
+  overflow-y:auto !important;
+  overflow-x:hidden !important;
+  flex:none !important;
+}
+
+/* Mobile: still fixed, just shorter to fit the screen */
+@media (max-width:600px){
+  #content-letter .letter-page{
+    height:460px !important;
+    min-height:460px !important;
+    max-height:460px !important;
+  }
+}
+
+/* Dark play button only — DOES NOT touch audio.volume */
+#musicPlayer1 .music-btn.main{
+  background:#57445f !important;
+  border-color:#57445f !important;
+  color:#fff !important;
+  box-shadow:0 5px 14px rgba(40,30,45,.22) !important;
+}
+
+/* Audio volume stays at the normal player setting */
+#songAudio1{
+  volume:0.8;
+}
+
+
+/* ============================================================
+   MAKE THE LETTER BOX INSIDE THE ENVELOPE BIGGER
+   ============================================================ */
+#content-letter .letter-page{
+  width:100% !important;
+  height:620px !important;
+  min-height:620px !important;
+  max-height:620px !important;
+  padding:34px 42px !important;
+  box-sizing:border-box !important;
+  overflow-y:auto !important;
+}
+
+@media (max-width:600px){
+  #content-letter .letter-page{
+    height:540px !important;
+    min-height:540px !important;
+    max-height:540px !important;
+    padding:28px 24px !important;
+  }
+}
+
+
+/* ============================================================
+   EVEN BIGGER LETTER BOX
+   ============================================================ */
+#content-letter .letter-page{
+  width:100% !important;
+  height:760px !important;
+  min-height:760px !important;
+  max-height:760px !important;
+  padding:48px 58px !important;
+  box-sizing:border-box !important;
+  overflow-y:auto !important;
+}
+
+@media (max-width:600px){
+  #content-letter .letter-page{
+    height:650px !important;
+    min-height:650px !important;
+    max-height:650px !important;
+    padding:36px 28px !important;
+  }
+}
+
+
+/* ============================================================
+   LETTER BOX — 1500px
+   ============================================================ */
+#content-letter .letter-page{
+  width:100% !important;
+  height:1500px !important;
+  min-height:1500px !important;
+  max-height:1500px !important;
+  padding:60px 70px !important;
+  box-sizing:border-box !important;
+  overflow-y:auto !important;
+}
+
+@media (max-width:600px){
+  #content-letter .letter-page{
+    height:1500px !important;
+    min-height:1500px !important;
+    max-height:1500px !important;
+    padding:45px 30px !important;
+  }
+}
+
+
+/* Slightly smaller letter box */
+#content-letter .letter-page{
+  height:1000px !important;
+  min-height:1000px !important;
+  max-height:1000px !important;
+  padding:50px 60px !important;
+}
+
+@media (max-width:600px){
+  #content-letter .letter-page{
+    height:1000px !important;
+    min-height:1000px !important;
+    max-height:1000px !important;
+    padding:38px 28px !important;
+  }
+}
+
+
+/* ============================================================
+   REMOVE THE INNER LETTER BOX
+   Keep the envelope itself unchanged.
+   ============================================================ */
+
+/* Remove the separate rectangular/card background around the letter text */
+#content-letter .letter-page{
+  background:transparent !important;
+  border:none !important;
+  box-shadow:none !important;
+  border-radius:0 !important;
+}
+
+/* Keep the letter text itself */
+#content-letter .letter-text{
+  background:transparent !important;
+  border:none !important;
+  box-shadow:none !important;
+}
+
+
+/* ============================================================
+   INNER LETTER BOX — SOFTLY MATCH THE ENVELOPE
+   ============================================================ */
+
+#content-letter .letter-page{
+  background:rgba(255,255,255,.58) !important;
+  border:1px solid rgba(201,174,251,.28) !important;
+  box-shadow:0 8px 22px rgba(105,88,130,.07) !important;
+  border-radius:18px !important;
+}
+
+/* Keep the inside subtle, not bright or loud */
+#content-letter .letter-text{
+  background:transparent !important;
+}
+
 </style>
+
+<style id="no-letter-box">
+#content-letter .soft-card,
+#content-letter .letter-page,
+#content-letter .letter-text {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+#content-letter .letter-page::before,
+#content-letter .letter-page::after,
+#content-letter .letter-text::before,
+#content-letter .letter-text::after {
+  display: none !important;
+}
+#content-letter .letter-text {
+  padding: 0 !important;
+}
+</style>
+
 </head>
 <body>
+<canvas id="starfield"></canvas>
+<div class="ambient-glow g1"></div><div class="ambient-glow g2"></div>
+<div class="progress-orb" id="progressOrb"><span>01</span></div>
 
 <!-- ambient blobs -->
 <svg class="blob" style="top:8%;left:6%;" width="220" height="220" viewBox="0 0 32 29" xmlns="http://www.w3.org/2000/svg">
@@ -541,8 +1592,6 @@
           <svg viewBox="0 0 80 80" width="72" height="72">
             <rect x="8" y="20" width="64" height="44" rx="6" fill="#fff" stroke="#7c3aed" stroke-width="3"/>
             <path d="M10 22 L40 48 L70 22" fill="none" stroke="#7c3aed" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-            <circle cx="58" cy="52" r="9" fill="#5b6ef5"/>
-            <path d="M54 52 l3 3 6 -6" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </div>
         <h3>my letter</h3>
@@ -582,7 +1631,7 @@
       <span class="eyebrow">my letter for you adi</span>
 
       <div class="envelope-wrap" id="envelopeWrap" style="margin-top:18px;">
-        <div class="envelope" id="envelopeBtn" role="button" tabindex="0" aria-label="Open the envelope">
+        <div class="envelope" id="envelopeBtn" aria-hidden="true">
           <svg class="envelope-svg" viewBox="0 0 200 140" width="220" height="154">
             <rect x="5" y="25" width="190" height="110" rx="8" fill="#fff" stroke="#7c3aed" stroke-width="3"/>
             <path class="letter-peek" d="M28 20 h144 a4 4 0 0 1 4 4 v66 h-152 v-66 a4 4 0 0 1 4 -4 z" fill="#f6f1ff" stroke="#c9aefb" stroke-width="2"/>
@@ -592,33 +1641,39 @@
             <path class="seal-heart" d="M100 62 c-6 -6 -12 -4 -12 2 c0 5 6 9 12 13 c6 -4 12 -8 12 -13 c0 -6 -6 -8 -12 -2 Z" fill="#f1e9ff"/>
           </svg>
         </div>
-        <p class="tap-hint" id="tapHint">tap the envelope to open it</p>
+
       </div>
 
       <div class="letter-text hidden" id="letterFull" style="margin-top:18px;">
         <div class="letter-page" id="letterPage1">
           <p>Dear <span class="editable-hint">[my adi]</span>,</p>
           <p>hiiii my adi. first of all, happy birthday to me hehe but more than anything, there's something i've been wanting to ask you, and i think i'm finally ready to say it properly.
-may i court you?
-we've known each other for a year and a half now, and honestly, ang dami na nating napagdaanan together. when i think about everything we've shared, the random conversations, our kulit moments, the late-night talks, the silly arguments, the times we laughed over the smallest things, and even the moments when things between us weren't okay, i can't help but feel really grateful that i got to meet you.
-one and a half years might not sound like that much to other people, but to me, it's already a lot of memories, feelings, and little moments that i wouldn't trade for anything. i've gotten to see so many different sides of you, and somehow, every side of you just makes me want to understand you more. even the parts of you that you think are difficult, the moments when you pull away, when you're unsure, when you don't know how to explain what you're feeling—I still want to understand you. i don't expect you to always have everything figured out.
+we've known each other for a year and a half now, and honestly, ang dami na nating napagdaanan together. when i think about everything we've shared, the random conversations, our kulit moments, the late night talks, the silly arguments, the times we laughed over the smallest things, and even the moments when things between us weren't okay, i can't help but feel really grateful that i got to meet you.
+one and a half years might not sound like that much to other people, but to me, it's already a lot of memories, feelings, and little moments that i wouldn't trade for anything. i've gotten to see so many different sides of you, and somehow, every side of you just makes me want to understand you more. even the parts of you that you think are difficult, the moments when you pull away, when you're unsure, when you don't know how to explain what you're feeling I still want to understand you. i don't expect you to always have everything figured out.
 i know i've already told you how much i love and care about you, but i don't want those words to just be words anymore. i want you to feel them through the way i treat you, the way i listen to you, the patience i give you, and the effort i put into us. i want my actions to make you feel that i mean everything i say.
 and honestly, i don't want to rush you. i don't want to force a label on what we have or make you feel like you have to give me an answer just because i asked. i just want to be honest with you about where my heart is and what i genuinely want.</p>
         </div>
         <div class="letter-page hidden" id="letterPage2">
           <p>want to keep learning you. not just the things you've already shown me, but the little things too. your habits, your random thoughts, what makes you happy, what makes you nervous, the things you overthink about, the things you get excited over, the things you don't usually tell people. i want to know the version of you that you don't always show everyone. and even after a year and a half, i know there's still so much more of you that i haven't discovered yet, and i'd love to keep discovering those things with you.
 after everything we've shared, i realized i don't want to keep wondering about what we could be. i don't want to keep hiding behind the idea that maybe someday i'll tell you how serious i am about you. i want to tell you now, properly, while i still have the chance to.
-so, may i court you?
-i'm not asking because i expect you to immediately give me everything. i'm asking because i want the chance to earn your trust, your love, and eventually, your choice. i want to pursue you in a way that never makes you feel like you have to beg for love or question whether you're worth choosing. i want you to feel wanted, appreciated, and cared for—not just when things are easy, but especially when they aren't.</p>
+so,
+i'm not asking because i expect you to immediately give me everything. i'm asking because i want the chance to earn your trust, your love, and eventually, your choice. i want to pursue you in a way that never makes you feel like you have to beg for love or question whether you're worth choosing. i want you to feel wanted, appreciated, and cared for not just when things are easy, but especially when they aren't.</p>
         </div>
         <div class="letter-page hidden" id="letterPage3">
           <p>know we won't always have perfect days. we're both human, and there will be times when we misunderstand each other, get tired, get quiet, or don't know what to say. i can't promise that i'll always know exactly what to do, but i can promise that i'll try. i'll communicate, i'll listen, i'll learn from my mistakes, and i'll keep choosing to understand you instead of giving up on you.
 and after everything, i don't just want to say that i like you. i want you to know that i'm serious about you. i'm sure that you're someone i want to continue knowing, loving, and choosing. not because i think you're perfect, but because i've seen the imperfect parts too, and i still want you.
-i don't want to rush. i want to court you because i want to do this properly. i want to show you that my feelings aren't just something i say when everything feels good. i want to build something with you slowly, honestly, and genuinely—something that both of us can feel proud of.
+i don't want to rush. i want to court you because i want to do this properly. i want to show you that my feelings aren't just something i say when everything feels good. i want to build something with you slowly, honestly, and genuinely something that both of us can feel proud of.
 so no pressure, okay? i just really wanted you to know what's in my heart.
-after everything we've shared, after all the memories and all the feelings, i think it's finally time for me to ask you properly.
-may i court you, my adi?</p>
-          <span class="sign">— <span class="editable-hint">[your ori]</span></span>
+after everything we've shared, after all the memories and all the feelings, i think it's finally time for me to ask you properly.</p>
+          <span class="sign">— <span class="editable-hint">[your aveniel]</span></span>
+        </div>
+
+        <div class="letter-page hidden" id="letterPage4">
+          <p>and if you're wondering what i hope comes after this, it's actually simple. i hope i get to keep showing up for you. i hope i get to learn your favorite little things, celebrate your wins, sit with you through the quiet days, and make more memories that we'll randomly remember months from now and laugh about.</p>
+          <p>i don't need a perfect story. i just want something real. something patient. something where we can be honest when we're happy, honest when we're hurt, and still choose to meet each other halfway. if you let me, i'll take this one step at a time with you.</p>
+          <p>so here's my little heart, no dramatic conditions attached. just me, choosing you, and asking if you'll let me try.</p>
+          <p><strong>may i court you, my adi?</strong></p>
+          <span class="sign">— <span class="editable-hint">[your aveniel]</span></span>
         </div>
 
         <div class="letter-page-nav">
@@ -626,6 +1681,7 @@ may i court you, my adi?</p>
             <span class="dot active" data-page="1"></span>
             <span class="dot" data-page="2"></span>
             <span class="dot" data-page="3"></span>
+            <span class="dot" data-page="4"></span>
           </div>
           <button class="btn btn-primary" id="turnPageBtn">turn the page</button>
         </div>
@@ -646,27 +1702,6 @@ may i court you, my adi?</p>
       <div class="continue-row hidden" id="nextFromFlower">
         <button class="btn btn-primary" id="nextFromFlowerBtn">next</button>
       </div>
-    </div>
-
-    <!-- SONG CONTENT -->
-    <div id="content-song" class="soft-card hidden">
-      <span class="eyebrow">our song</span>
-      <div class="vinyl" style="margin-top:18px;"></div>
-      <div class="eq"><span></span><span></span><span></span><span></span><span></span></div>
-      <h2 class="heading"><span class="editable-hint">[Say You Won't Let Go]</span></h2>
-      <p class="sub" style="margin-bottom:14px;">everytime I hear this song it remind me of us</p>
-
-      <!-- ============================================================
-           SONG PLACEHOLDER — swap the src to add your actual song.
-           Easiest: put the mp3 file in the SAME FOLDER as this HTML
-           file, and give it a plain filename with no spaces, no
-           apostrophes, no parentheses — e.g. our-song.mp3
-      ============================================================ -->
-      <audio class="song-player" controls preload="none">
-        <source src="audio/James Arthur - Say You Won't Let Go (Lyrics).mp3" type="audio/mpeg">
-        Your browser doesn't support audio playback.
-      </audio>
-      <div class="song-status" id="songStatus1"></div>
     </div>
 
     <div class="continue-row hidden" id="continueRow">
@@ -705,17 +1740,102 @@ may i court you, my adi?</p>
     <div class="soft-card">
       <span class="eyebrow">i love you adi</span>
       <h2 class="heading" style="margin-top:6px;">our song</h2>
-      <div class="vinyl" style="margin-top:14px;"></div>
-      <div class="eq"><span></span><span></span><span></span><span></span><span></span></div>
-      <h2 class="heading"><span class="editable-hint">[song title]</span></h2>
-      <p class="sub" style="margin-bottom:14px;">Here's to us — play this one on repeat, I know I will.</p>
+      <p class="sub" style="margin-bottom:10px;">here's to us — play this one whenever you miss me.</p>
 
-      <!-- SONG PLACEHOLDER — same as the page-2 song card, swap the src -->
-      <audio class="song-player" controls preload="none">
+      <div class="music-player" id="musicPlayer2">
+        <div class="music-top">
+          <div class="music-label"><span class="music-dot"></span> our song</div>
+          <div class="music-time-label">enjoy</div>
+        </div>
+        <div class="record-stage">
+          <div class="record-aura"></div>
+          <div class="record" id="record2"></div>
+          <div class="needle"></div>
+        </div>
+        <div class="track-meta">
+          <p class="track-title">Say You Won't Let Go</p>
+          <div class="track-artist">James Arthur • our song</div>
+        </div>
+        <div class="visualizer" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <audio id="songAudio2" class="hidden-audio" preload="metadata">
+          <source src="audio/James Arthur - Say You Won't Let Go (Lyrics).mp3" type="audio/mpeg">
+        </audio>
+        <input class="music-progress" id="progress2" type="range" min="0" max="100" value="0" step="0.1" aria-label="Song progress">
+        <div class="time-row"><span id="current2">0:00</span><span id="duration2">0:00</span></div>
+        <div class="music-controls">
+          <button class="music-btn" id="back2" type="button" aria-label="Back 10 seconds">↶</button>
+          <button class="music-btn main" id="play2" type="button" aria-label="Play song">▶</button>
+          <button class="music-btn" id="forward2" type="button" aria-label="Forward 10 seconds">↷</button>
+        </div>
+        <div class="volume-row">
+          <span>♩</span>
+          <input class="volume" id="volume2" type="range" min="0" max="1" step="0.01" value="0.8" aria-label="Volume">
+          <span>♪</span>
+        </div>
+        <p class="music-note">if this song ever plays, i hope it reminds you of me </p>
+        <div class="music-error" id="musicError2"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================= PAGE 5 — MUSIC ============================= -->
+<section id="page5" class="page music-page">
+  <div class="music-backdrop"></div>
+  <div class="music-shell">
+    <div class="music-intro">
+      <span class="eyebrow">a little song for you</span>
+      <h1 class="script">our song</h1>
+      <p class="sub"></p>
+    </div>
+
+    <div class="music-player" id="musicPlayer1">
+      <div class="music-top">
+        <div class="music-label"><span class="music-dot"></span> now playing</div>
+        <div class="music-time-label">made me think of us</div>
+      </div>
+
+      <div class="record-stage">
+        <div class="record-aura"></div>
+        <div class="record" id="record1"></div>
+        <div class="needle"></div>
+      </div>
+
+      <div class="track-meta">
+        <p class="track-title">Say You Won't Let Go</p>
+        <div class="track-artist">James Arthur</div>
+      </div>
+
+      <div class="visualizer" aria-hidden="true">
+        <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+      </div>
+
+      <audio id="songAudio1" class="hidden-audio" preload="metadata">
         <source src="audio/James Arthur - Say You Won't Let Go (Lyrics).mp3" type="audio/mpeg">
-        Your browser doesn't support audio playback.
       </audio>
-      <div class="song-status" id="songStatus2"></div>
+
+      <input class="music-progress" id="progress1" type="range" min="0" max="100" value="0" step="0.1" aria-label="Song progress">
+      <div class="time-row"><span id="current1">0:00</span><span id="duration1">0:00</span></div>
+
+      <div class="music-controls">
+        <button class="music-btn" id="back1" type="button" aria-label="Back 10 seconds">↶</button>
+        <button class="music-btn main" id="play1" type="button" aria-label="Play song">▶</button>
+        <button class="music-btn" id="forward1" type="button" aria-label="Forward 10 seconds">↷</button>
+      </div>
+
+      <div class="volume-row">
+        <span>♩</span>
+        <input class="volume" id="volume1" type="range" min="0" max="1" step="0.01" value="0.8" aria-label="Volume">
+        <span>♪</span>
+      </div>
+
+      <p class="music-note">press play and let the song say what i can't always put into words ♡</p>
+      <div class="music-error" id="musicError1"></div>
+    </div>
+
+    <div class="continue-row">
+      <button class="btn btn-primary" id="toPage3FromMusic">okay, go on</button>
     </div>
   </div>
 </section>
@@ -765,16 +1885,28 @@ function goToPage(n){
 const sequenceMap = {
   letter: ['letter', 'flower'],
   flower: ['flower', 'letter'],
-  song:   ['song']
+  song:   ['song', 'letter', 'flower']
 };
 
 let selectedChoice = null;
+let heardSongFirst = false;
+
+
+    function stopAllMusic(){
+      document.querySelectorAll('audio').forEach(a => { try { a.pause(); a.currentTime = 0; } catch(e){} });
+    }
+
+    function renderEnding(){
+  const music = document.getElementById('musicPlayer2');
+  if(music) music.classList.toggle('hidden', heardSongFirst);
+}
+
 let seq = [];
 let seqIndex = 0;
 let letterStepIsLast = false;
 
 let currentLetterPage = 1;
-const LETTER_PAGE_COUNT = 3;
+const LETTER_PAGE_COUNT = 4;
 
 function showLetterPage(n){
   currentLetterPage = n;
@@ -814,10 +1946,11 @@ function resetEnvelope(){
   const wrap = document.getElementById('envelopeWrap');
   const full = document.getElementById('letterFull');
   const nextRow = document.getElementById('nextFromLetter');
+
+  // No click/check is required anymore — the letter is opened automatically.
   wrap.classList.remove('opened', 'fading-out', 'hidden');
-  document.getElementById('tapHint').style.opacity = '1';
-  full.classList.add('hidden');
-  full.classList.remove('fade-in');
+  full.classList.remove('hidden');
+  full.classList.add('fade-in');
   nextRow.classList.add('hidden');
   currentLetterPage = 1;
   document.querySelectorAll('.letter-page').forEach(p => {
@@ -829,6 +1962,10 @@ function resetEnvelope(){
     d.classList.toggle('active', d.dataset.page === '1');
   });
   document.getElementById('turnPageBtn').classList.remove('hidden');
+
+  // Fade the decorative envelope away after the letter appears.
+  setTimeout(() => wrap.classList.add('fading-out'), 500);
+  setTimeout(() => wrap.classList.add('hidden'), 900);
 }
 
 /* ============================================================
@@ -837,42 +1974,86 @@ function resetEnvelope(){
    of just silently doing nothing, you get a plain-language
    reason shown right under the player if it can't play.
 ============================================================ */
-function wireSongDiagnostics(audio, statusEl){
-  if(!audio || !statusEl || audio.dataset.wired) return;
-  audio.dataset.wired = '1';
-  audio.addEventListener('error', () => {
-    statusEl.textContent = "couldn't load this song — check that the mp3 file exists at that exact path, and that the filename has no spaces/parentheses.";
-  });
-  audio.addEventListener('stalled', () => {
-    if(!statusEl.textContent){
-      statusEl.textContent = "still trying to load the song...";
-    }
-  });
-  audio.addEventListener('playing', () => { statusEl.textContent = ''; });
+function formatTime(seconds){
+  if(!Number.isFinite(seconds)) return '0:00';
+  const m = Math.floor(seconds / 60);
+  const s = Math.floor(seconds % 60).toString().padStart(2,'0');
+  return `${m}:${s}`;
 }
-wireSongDiagnostics(document.querySelector('#content-song audio.song-player'), document.getElementById('songStatus1'));
-wireSongDiagnostics(document.querySelector('#page4 audio.song-player'), document.getElementById('songStatus2'));
+
+function setupMusicPlayer(n){
+  const audio = document.getElementById('songAudio' + n);
+  const box = document.getElementById('musicPlayer' + n);
+  const record = document.getElementById('record' + n);
+  const play = document.getElementById('play' + n);
+  const back = document.getElementById('back' + n);
+  const forward = document.getElementById('forward' + n);
+  const progress = document.getElementById('progress' + n);
+  const volume = document.getElementById('volume' + n);
+  const current = document.getElementById('current' + n);
+  const duration = document.getElementById('duration' + n);
+  const error = document.getElementById('musicError' + n);
+  if(!audio) return;
+
+  audio.volume = 0.8;
+
+  function sync(){
+    const pct = audio.duration ? (audio.currentTime / audio.duration) * 100 : 0;
+    progress.value = Number.isFinite(pct) ? pct : 0;
+    current.textContent = formatTime(audio.currentTime);
+    duration.textContent = formatTime(audio.duration);
+    const playing = !audio.paused && !audio.ended;
+    box.classList.toggle('playing', playing);
+    record.classList.toggle('playing', playing);
+    play.textContent = playing ? '❚❚' : '▶';
+    play.setAttribute('aria-label', playing ? 'Pause song' : 'Play song');
+  }
+
+  async function toggle(){
+    error.textContent = '';
+    if(audio.paused){
+      try { await audio.play(); }
+      catch(err){ error.textContent = 'the song could not start — keep the audio folder beside this page ♡'; }
+    } else audio.pause();
+    sync();
+  }
+
+  play.addEventListener('click', toggle);
+  back.addEventListener('click', () => {
+    audio.currentTime = Math.max(0, audio.currentTime - 10);
+    sync();
+  });
+  forward.addEventListener('click', () => {
+    audio.currentTime = Math.min(audio.duration || Infinity, audio.currentTime + 10);
+    sync();
+  });
+  progress.addEventListener('input', () => {
+    if(audio.duration) audio.currentTime = (Number(progress.value) / 100) * audio.duration;
+    sync();
+  });
+  volume.addEventListener('input', () => { audio.volume = Number(volume.value); });
+  audio.addEventListener('loadedmetadata', sync);
+  audio.addEventListener('timeupdate', sync);
+  audio.addEventListener('play', sync);
+  audio.addEventListener('pause', sync);
+  audio.addEventListener('ended', () => { audio.currentTime = 0; sync(); });
+  audio.addEventListener('error', () => {
+    error.textContent = 'i can’t find the song file — keep the "audio" folder beside this HTML ♡';
+    sync();
+  });
+  sync();
+}
+
+setupMusicPlayer(1);
+setupMusicPlayer(2);
 
 function playSongIn(containerSelector){
-  const audio = document.querySelector(containerSelector + ' audio.song-player');
-  if(!audio) return;
-  audio.currentTime = 0;
-  const p = audio.play();
-  if(p !== undefined){
-    p.catch(() => {
-      /* autoplay blocked — controls are visible so she can just tap play */
-      const statusEl = document.querySelector(containerSelector + ' .song-status');
-      if(statusEl && !statusEl.textContent){
-        statusEl.textContent = "tap play — your browser blocked autoplay.";
-      }
-    });
-  }
+  const audio = document.querySelector(containerSelector + ' audio');
+  if(audio) audio.play().catch(() => {});
 }
-
 function pauseSongIn(containerSelector){
-  const audio = document.querySelector(containerSelector + ' audio.song-player');
-  if(!audio) return;
-  audio.pause();
+  const audio = document.querySelector(containerSelector + ' audio');
+  if(audio) audio.pause();
 }
 
 function showSequenceStep(){
@@ -901,7 +2082,7 @@ function showSequenceStep(){
   }
   if(step === 'song'){
     document.getElementById('continueRow').classList.remove('hidden');
-    playSongIn('#content-song');
+
   }
 }
 
@@ -910,6 +2091,15 @@ document.querySelectorAll('.choice-card').forEach(card => {
     selectedChoice = card.dataset.choice;
     seq = sequenceMap[selectedChoice];
     seqIndex = 0;
+    heardSongFirst = false;
+    if(selectedChoice === 'song'){
+      seq = ['song','letter','flower'];
+      seqIndex = 0;
+      goToPage(5);
+      const audio = document.getElementById('songAudio1');
+      if(audio) audio.currentTime = 0;
+      return;
+    }
     goToPage(2);
     showSequenceStep();
   });
@@ -922,37 +2112,28 @@ function advanceSequence(){
   }
 }
 
-/* envelope open interaction */
-const envelopeBtn = document.getElementById('envelopeBtn');
-function openEnvelope(){
-  const wrap = document.getElementById('envelopeWrap');
-  if(wrap.classList.contains('opened')) return;
-  wrap.classList.add('opened');
-  document.getElementById('tapHint').style.opacity = '0';
-  setTimeout(() => {
-    wrap.classList.add('hidden');
-    const full = document.getElementById('letterFull');
-    full.classList.remove('hidden');
-    full.classList.add('fade-in');
-    showLetterPage(1);
-  }, 700);
-}
-envelopeBtn.addEventListener('click', openEnvelope);
-envelopeBtn.addEventListener('keypress', (e) => {
-  if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); openEnvelope(); }
-});
-
 document.getElementById('turnPageBtn').addEventListener('click', turnLetterPage);
 document.getElementById('nextFromLetterBtn').addEventListener('click', advanceSequence);
 document.getElementById('nextFromFlowerBtn').addEventListener('click', advanceSequence);
 
 document.getElementById('toPage3').addEventListener('click', () => {
   pauseSongIn('#content-song');
+  if(selectedChoice === 'song' && seqIndex < seq.length - 1){
+    advanceSequence();
+    return;
+  }
   goToPage(3);
 });
+document.getElementById('toPage3FromMusic').addEventListener('click', () => {
+  const audio = document.getElementById('songAudio1');
+  if(audio) audio.pause();
+  seqIndex = 1;
+  goToPage(2);
+  showSequenceStep();
+});
 document.getElementById('toPage4').addEventListener('click', () => {
-  goToPage(4);
-  playSongIn('#page4');
+  goToPage(4, renderEnding);
+
 });
 
 /* ============================================================
@@ -1341,6 +2522,64 @@ function toggleStickerVisibility(){
 }
 toggleStickerVisibility();
 window.addEventListener('resize', toggleStickerVisibility);
+/* ============================================================
+   ULTRA MODE — stars, progress, micro-interactions
+============================================================ */
+const progressOrb = document.getElementById('progressOrb');
+function updateProgress(n){
+  if(progressOrb) progressOrb.querySelector('span').textContent = String(n).padStart(2,'0');
+}
+const originalGoToPage = goToPage;
+goToPage = function(n){ originalGoToPage(n); updateProgress(n); };
+
+const canvas = document.getElementById('starfield');
+const ctx = canvas.getContext('2d');
+let stars = [];
+function resizeStars(){
+  canvas.width = innerWidth * devicePixealRatio;
+  canvas.height = innerHeight * devicePixelRatio;
+  canvas.style.width = innerWidth+'px'; canvas.style.height = innerHeight+'px';
+  ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0);
+  stars = Array.from({length:Math.min(140,Math.floor(innerWidth/8))},()=>({
+    x:Math.random()*innerWidth,y:Math.random()*innerHeight,
+    r:Math.random()*1.7+.3,a:Math.random()*.7+.15,
+    tw:Math.random()*.025+.006
+  }));
+}
+function animateStars(){
+  ctx.clearRect(0,0,innerWidth,innerHeight);
+  for(const s of stars){
+    s.a += (Math.random()-.5)*s.tw;
+    s.a=Math.max(.08,Math.min(.9,s.a));
+    ctx.beginPath();ctx.arc(s.x,s.y,s.r,0,Math.PI*2);
+    ctx.fillStyle=`rgba(255,255,255,${s.a})`;ctx.fill();
+  }
+  requestAnimationFrame(animateStars);
+}
+resizeStars(); addEventListener('resize',resizeStars); animateStars();
+
+document.addEventListener('pointermove',e=>{
+  if(Math.random()>.82){
+    const s=document.createElement('div');s.className='spark';
+    s.style.left=e.clientX+'px';s.style.top=e.clientY+'px';
+    document.body.appendChild(s);setTimeout(()=>s.remove(),1800);
+  }
+});
+function heartBurstAt(x,y){
+  for(let i=0;i<14;i++){
+    const h=document.createElement('div');h.className='heart-burst';h.textContent=['♥','♡','✦'][i%3];
+    h.style.left=x+'px';h.style.top=y+'px';
+    h.style.setProperty('--x',`${(Math.random()-.5)*240}px`);
+    h.style.setProperty('--y',`${-40-Math.random()*180}px`);
+    h.style.setProperty('--r',`${(Math.random()-.5)*70}deg`);
+    document.body.appendChild(h);setTimeout(()=>h.remove(),1500);
+  }
+}
+document.getElementById('yesBtn').addEventListener('click',e=>heartBurstAt(e.clientX,e.clientY));
+document.querySelectorAll('.choice-card').forEach(c=>{
+  c.addEventListener('click',e=>heartBurstAt(e.clientX,e.clientY));
+});
+
 </script>
 </body>
 </html>
